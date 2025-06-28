@@ -44,6 +44,7 @@ function onPageLoad() {
   var url = "/get_location_names";
       $.get(url,function(data, status) {
       console.log("got response for get_location_names request");
+      console.log("Response data:", data);
       if(data) {
           //var locations = data.locations;
           var locations = data; // FIXED HERE
