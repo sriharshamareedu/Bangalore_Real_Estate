@@ -45,7 +45,8 @@ function onPageLoad() {
       $.get(url,function(data, status) {
       console.log("got response for get_location_names request");
       if(data) {
-          var locations = data.locations;
+          //var locations = data.locations;
+          var locations = data; // FIXED HERE
           var uiLocations = document.getElementById("uiLocations");
           $('#uiLocations').empty();
           for(var i in locations) {
