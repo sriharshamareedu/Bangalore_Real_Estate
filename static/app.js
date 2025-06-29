@@ -46,8 +46,8 @@ function onPageLoad() {
       console.log("got response for get_location_names request");
       console.log("Response data:", data);
       if(data) {
-          //var locations = data.locations;
-          var locations = data; // FIXED HERE
+          var locations = data.locations;
+          //var locations = data; // FIXED HERE
           var uiLocations = document.getElementById("uiLocations");
           $('#uiLocations').empty();
           for(var i in locations) {
